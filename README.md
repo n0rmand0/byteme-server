@@ -95,6 +95,7 @@ The actions supported as of today:
 * linein (only analog linein, not PLAYBAR yet)
 * clip (announce custom mp3 clip)
 * clipall
+* listclips
 * join / leave  (Grouping actions)
 * sub (on/off/gain/crossover/polarity) See SUB section for more info
 * nightmode (on/off, PLAYBAR only)
@@ -683,6 +684,11 @@ Examples:
 
 *Pro-tip: announce your arrival with an epic theme song!*
 
+List clips
+----------
+
+List the manifest of clips.  You may edit the manifest in `static/clips/manifest`
+
 Grouping
 --------
 
@@ -919,4 +925,4 @@ TCP, port 80/443 (for looking up hig res cover arts on various music services)
 
 The UDP traffic is a mixture of multicast (outgoing), broadcast (outgoing) and unicast (incoming). The multicast address is 239.255.255.250, the broadcast is 255.255.255.255 and the unicast is from the Sonos players.
 
-If port 3500 is occupied while trying to bind it, it will try using 3501, 3502, 3503 etc. You would need to adjust your firewall rules accordingly, if running multiple instances of this software, or any other software utilizing these ports. 
+If port 3500 is occupied while trying to bind it, it will try using 3501, 3502, 3503 etc. You would need to adjust your firewall rules accordingly, if running multiple instances of this software, or any other software utilizing these ports.
